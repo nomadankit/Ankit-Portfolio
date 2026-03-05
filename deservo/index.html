@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit</title>
+    <link rel="icon" type="image/png" href="../assets/favicon.png?v=3">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&family=Caveat:wght@700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Specific styles for the project template */
+        .project-hero {
+            padding-top: 6rem;
+            padding-bottom: 4rem;
+            text-align: center;
+        }
+
+        .project-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+            color: #555;
+            font-size: 0.95rem;
+            flex-wrap: wrap;
+        }
+
+        .meta-item strong {
+            color: var(--text-ink);
+        }
+
+        .project-cover-img {
+            width: 100%;
+            height: 50vh;
+            min-height: 400px;
+            background-color: #ddd;
+            border-radius: var(--border-radius);
+            margin: 3rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-size: 1.5rem;
+            background: linear-gradient(45deg, #e0e0e0, #f5f5f5);
+        }
+
+        .project-section {
+            padding: 3rem 0;
+        }
+
+        .project-section h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--accent-blue);
+        }
+
+        .project-text {
+            font-size: 1.125rem;
+            max-width: 800px;
+            color: #333;
+        }
+
+        .tools-list {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .tool-tag {
+            background-color: rgba(0, 0, 0, 0.05);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Screens Grid */
+        .screens-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .screen-placeholder {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background-color: #eaeaea;
+            border-radius: var(--border-radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            font-weight: 600;
+            color: var(--text-ink);
+            border-bottom: 2px solid var(--text-ink);
+            padding-bottom: 2px;
+        }
+
+        .back-link:hover {
+            color: var(--accent-pink);
+            border-color: var(--accent-pink);
+        }
+
+        @media (max-width: 768px) {
+            .screens-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header area (same as index, light grid) -->
+    <div class="light-area">
+        <header class="header">
+            <a href="/" class="logo" aria-label="Home">
+                <img src="../assets/logo.png?v=3" alt="Ankit" class="header-logo-img">
+            </a>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/work">Work</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="mailto:ankit3765kumar@gmail.com?subject=Website%20Inquiry&body=Hi%20Ankit,%0D%0A%0D%0AI%27m%20interested%20in%20a%20website.%20Here%20are%20the%20details:%0D%0A-%20Business%20Name:%0D%0A-%20Website%20Type%20(New%20or%20Redesign):%0D%0A-%20Timeline:%0D%0A-%20Budget:%0D%0A%0D%0AThank%20you."
+                class="btn btn-primary" id="header-cta" aria-label="Email Ankit">Contact
+                Now</a>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 12h18M3 6h18M3 18h18"></path>
+                </svg>
+            </button>
+        </header>
+
+        <section class="container project-hero">
+            <a href="/work" class="back-link">← Back to Projects</a>
+            <h1 class="hero-title" style="font-size: clamp(3rem, 6vw, 5rem);">Deservo</h1>
+
+            <!-- Hero Image -->
+            <div class="project-cover-img" style="background: none; padding: 0; height: auto; min-height: 0;">
+                <img src="../assets/deservo-hero.png" alt="Deservo Cover"
+                    style="width: 100%; height: auto; border-radius: var(--border-radius);"
+                    onerror="this.src=''; this.parentElement.style.background='linear-gradient(45deg, #e0e0e0, #f5f5f5)'; this.parentElement.innerText='Hero Image Placeholder';">
+            </div>
+        </section>
+
+        <!-- Torn edge down to next section if needed, but for simplicity let's keep all project details light themed -->
+    </div>
+
+    <main class="container" style="padding-bottom: 6rem;">
+
+        <!-- Content Sections -->
+        <div class="project-section">
+            <h3>Overview</h3>
+            <p class="project-text">
+                Deservo is a high-conversion business website designed to represent a <strong>growth infrastructure
+                    company focused on operational efficiency and scalable systems</strong>. The project focuses on
+                building a modern digital presence that clearly communicates Deservo’s philosophy: engineering growth
+                systems that reduce operational drag and help founders scale with control.
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                The website combines <strong>clean interface design, strong messaging hierarchy, and structured user
+                    journeys</strong> to guide visitors from curiosity to action. The goal was not just to build a
+                visually appealing website, but to create a <strong>strategic digital platform capable of converting
+                    visitors into qualified leads.</strong>
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h3>My Perspective</h3>
+            <p class="project-text">
+                When designing Deservo's website, I approached it from a <strong>product and systems perspective rather
+                    than just a visual design project</strong>.
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                Instead of thinking of the site as a simple marketing page, I treated it as a <strong>growth
+                    infrastructure interface</strong> that communicates the company’s philosophy and services clearly.
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                My focus was on:
+            </p>
+            <ul class="project-text" style="margin-top: 0.5rem; list-style-type: disc; padding-left: 2rem;">
+                <li>clarity of message</li>
+                <li>strong visual hierarchy</li>
+                <li>structured conversion flow</li>
+                <li>modern UI aesthetics</li>
+                <li>scalable page architecture</li>
+            </ul>
+            <p class="project-text" style="margin-top: 1rem;">
+                The objective was to create a website that <strong>feels engineered rather than decorative</strong>,
+                reflecting the philosophy behind the Deservo brand.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h3>Goals of the Project</h3>
+            <p class="project-text">
+                The primary goals behind the Deservo website design were:
+            </p>
+            <ul class="project-text" style="margin-top: 0.5rem; list-style-type: disc; padding-left: 2rem;">
+                <li>Communicate Deservo’s philosophy of <strong>structured growth infrastructure</strong></li>
+                <li>Build a <strong>modern and premium visual identity</strong> for the brand</li>
+                <li>Create clear service explanations that reduce visitor confusion</li>
+                <li>Guide users naturally toward consultation requests</li>
+                <li>Design a system that can scale as the company expands</li>
+            </ul>
+            <p class="project-text" style="margin-top: 1rem;">
+                The website was designed to function as both a <strong>brand identity platform and a lead generation
+                    engine.</strong>
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h3>Implementation</h3>
+
+            <h4
+                style="font-family: var(--font-body); font-size: 1.25rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.5rem; color: var(--text-ink);">
+                Visual Identity & Design System</h4>
+            <p class="project-text">
+                The website uses a <strong>clean modern interface combined with gradient elements and soft geometric
+                    visuals</strong> to create a polished and futuristic brand aesthetic.
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                Key visual elements include:
+            </p>
+            <ul class="project-text" style="margin-top: 0.5rem; list-style-type: disc; padding-left: 2rem;">
+                <li>structured typography hierarchy</li>
+                <li>gradient accent visuals</li>
+                <li>minimalist layout design</li>
+                <li>subtle motion and spatial balance</li>
+            </ul>
+            <p class="project-text" style="margin-top: 1rem;">
+                This creates a visual identity that feels <strong>professional, technical, and modern</strong>.
+            </p>
+
+            <h4
+                style="font-family: var(--font-body); font-size: 1.25rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.5rem; color: var(--text-ink);">
+                Conversion-Focused Layout</h4>
+            <p class="project-text">
+                The page structure was designed around <strong>conversion psychology</strong>, ensuring that visitors
+                quickly understand:
+            </p>
+            <ul class="project-text" style="margin-top: 0.5rem; list-style-type: disc; padding-left: 2rem;">
+                <li>what Deservo does</li>
+                <li>why it matters</li>
+                <li>what problems it solves</li>
+                <li>how to get started</li>
+            </ul>
+            <p class="project-text" style="margin-top: 1rem;">
+                The layout includes sections that introduce services clearly while maintaining visual breathing room,
+                making the website easy to scan and navigate.
+            </p>
+
+            <h4
+                style="font-family: var(--font-body); font-size: 1.25rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.5rem; color: var(--text-ink);">
+                Service Presentation System</h4>
+            <p class="project-text">
+                The services section highlights the core infrastructure systems Deservo builds for businesses:
+            </p>
+            <ul class="project-text" style="margin-top: 0.5rem; list-style-type: disc; padding-left: 2rem;">
+                <li>High-Converting Web Design</li>
+                <li>Cold Outreach Systems</li>
+                <li>Lead Capture & Nurture Systems</li>
+                <li>Workflow Automation</li>
+            </ul>
+            <p class="project-text" style="margin-top: 1rem;">
+                Each service card was designed to quickly communicate the value of each system while keeping the layout
+                visually clean.
+            </p>
+
+            <h4
+                style="font-family: var(--font-body); font-size: 1.25rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.5rem; color: var(--text-ink);">
+                Lead Generation Interface</h4>
+            <p class="project-text">
+                The website includes a <strong>structured inquiry system</strong> allowing visitors to submit project
+                requests directly through a clean form interface.
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                This system collects:
+            </p>
+            <ul class="project-text" style="margin-top: 0.5rem; list-style-type: disc; padding-left: 2rem;">
+                <li>name</li>
+                <li>work email</li>
+                <li>company role</li>
+                <li>operational challenge</li>
+            </ul>
+            <p class="project-text" style="margin-top: 1rem;">
+                The goal is to gather <strong>qualified leads instead of generic contact messages</strong>, improving
+                the quality of potential client conversations.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h3>What This Project Demonstrates</h3>
+            <p class="project-text">
+                The Deservo website highlights my ability to design <strong>strategic websites that combine branding, UX
+                    design, and conversion systems.</strong>
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                This project demonstrates:
+            </p>
+            <ul class="project-text" style="margin-top: 0.5rem; list-style-type: disc; padding-left: 2rem;">
+                <li>modern UI/UX design skills</li>
+                <li>brand-focused web design</li>
+                <li>conversion-oriented layout strategy</li>
+                <li>structured information architecture</li>
+                <li>scalable website systems for growing companies</li>
+            </ul>
+            <p class="project-text" style="margin-top: 1rem;">
+                Rather than designing static websites, I focus on creating <strong>digital platforms that function as
+                    growth infrastructure for businesses.</strong>
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h3>Outcome</h3>
+            <p class="project-text">
+                The final result is a <strong>clean, modern, and scalable website</strong> that reflects Deservo’s
+                philosophy of engineered growth systems.
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                The project successfully transforms abstract ideas about operational efficiency and infrastructure into
+                a <strong>clear and visually engaging digital experience.</strong>
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                It demonstrates how thoughtful design can communicate complex ideas while guiding users naturally toward
+                taking action.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h3>Screens</h3>
+            <div class="screens-grid">
+                <div class="screen-placeholder" style="background: none; padding: 0;">
+                    <img src="../assets/media__1772694239682.png" alt="Screen 1"
+                        style="width: 100%; height: 100%; object-fit: contain; border-radius: var(--border-radius);"
+                        onerror="this.src=''; this.parentElement.style.background='#eaeaea'; this.parentElement.innerText='Screen 1 Placeholder';">
+                </div>
+                <div class="screen-placeholder" style="background: none; padding: 0;">
+                    <img src="../assets/media__1772693932949.png" alt="Screen 2"
+                        style="width: 100%; height: 100%; object-fit: contain; border-radius: var(--border-radius);"
+                        onerror="this.src=''; this.parentElement.style.background='#eaeaea'; this.parentElement.innerText='Screen 2 Placeholder';">
+                </div>
+                <div class="screen-placeholder" style="background: none; padding: 0; grid-column: 1 / -1;">
+                    <img src="../assets/media__1772693933056.png" alt="Screen 3"
+                        style="width: 100%; height: 100%; object-fit: contain; border-radius: var(--border-radius);"
+                        onerror="this.src=''; this.parentElement.style.background='#eaeaea'; this.parentElement.innerText='Screen 3 Placeholder';">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-area" style="padding-top: 0; border-top: 1px solid #ddd;">
+        <div class="cta-strip">
+            <div class="container">
+                <h2 class="cta-heading">Ready to build your website?</h2>
+                <a href="mailto:ankit3765kumar@gmail.com?subject=Website%20Inquiry&body=Hi%20Ankit,%0D%0A%0D%0AI%27m%20interested%20in%20a%20website.%20Here%20are%20the%20details:%0D%0A-%20Business%20Name:%0D%0A-%20Website%20Type%20(New%20or%20Redesign):%0D%0A-%20Timeline:%0D%0A-%20Budget:%0D%0A%0D%0AThank%20you."
+                    class="btn btn-primary btn-large" aria-label="Email Ankit">Contact
+                    Now</a>
+            </div>
+        </div>
+        <div class="main-footer container">
+            <div class="footer-col brand-col">
+                <a href="/" class="logo footer-logo">
+                    <img src="../assets/logo.png?v=3" alt="Ankit" class="footer-logo-img">
+                    <span>ANKIT</span>
+                </a>
+                <p>Modern Web Designer & Developer.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/work">Work</a></li>
+                    <li><a href="/services">Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="mailto:ankit3765kumar@gmail.com?subject=Website%20Inquiry&body=Hi%20Ankit,%0D%0A%0D%0AI%27m%20interested%20in%20a%20website.%20Here%20are%20the%20details:%0D%0A-%20Business%20Name:%0D%0A-%20Website%20Type%20(New%20or%20Redesign):%0D%0A-%20Timeline:%0D%0A-%20Budget:%0D%0A%0D%0AThank%20you."
+                            aria-label="Email Ankit">Email</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Location</h4>
+                <p>India</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;
+                <script>document.write(new Date().getFullYear())</script> Ankit. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

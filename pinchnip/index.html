@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit</title>
+    <link rel="icon" type="image/png" href="../assets/favicon.png?v=3">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&family=Caveat:wght@700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Specific styles for the project template */
+        .project-hero {
+            padding-top: 6rem;
+            padding-bottom: 4rem;
+            text-align: center;
+        }
+
+        .project-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+            color: #555;
+            font-size: 0.95rem;
+            flex-wrap: wrap;
+        }
+
+        .meta-item strong {
+            color: var(--text-ink);
+        }
+
+        .project-cover-img {
+            width: 100%;
+            height: 50vh;
+            min-height: 400px;
+            background-color: #ddd;
+            border-radius: var(--border-radius);
+            margin: 3rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-size: 1.5rem;
+            background: linear-gradient(45deg, #e0e0e0, #f5f5f5);
+        }
+
+        .project-section {
+            padding: 3rem 0;
+        }
+
+        .project-section h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--accent-blue);
+        }
+
+        .project-text {
+            font-size: 1.125rem;
+            max-width: 800px;
+            color: #333;
+        }
+
+        .tools-list {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .tool-tag {
+            background-color: rgba(0, 0, 0, 0.05);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Screens Grid */
+        .screens-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .screen-placeholder {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background-color: #eaeaea;
+            border-radius: var(--border-radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            font-weight: 600;
+            color: var(--text-ink);
+            border-bottom: 2px solid var(--text-ink);
+            padding-bottom: 2px;
+        }
+
+        .back-link:hover {
+            color: var(--accent-pink);
+            border-color: var(--accent-pink);
+        }
+
+        @media (max-width: 768px) {
+            .screens-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header area (same as index, light grid) -->
+    <div class="light-area">
+        <header class="header">
+            <a href="/" class="logo" aria-label="Home">
+                <img src="../assets/logo.png?v=3" alt="Ankit" class="header-logo-img">
+            </a>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/work">Work</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="mailto:ankit3765kumar@gmail.com?subject=Website%20Inquiry&body=Hi%20Ankit,%0D%0A%0D%0AI%27m%20interested%20in%20a%20website.%20Here%20are%20the%20details:%0D%0A-%20Business%20Name:%0D%0A-%20Website%20Type%20(New%20or%20Redesign):%0D%0A-%20Timeline:%0D%0A-%20Budget:%0D%0A%0D%0AThank%20you."
+                class="btn btn-primary" id="header-cta" aria-label="Email Ankit">Contact
+                Now</a>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 12h18M3 6h18M3 18h18"></path>
+                </svg>
+            </button>
+        </header>
+
+        <section class="container project-hero">
+            <a href="/work" class="back-link">← Back to Projects</a>
+            <h1 class="hero-title" style="font-size: clamp(3rem, 6vw, 5rem);">Pinchnip</h1>
+
+            <!-- Hero Image -->
+            <div class="project-cover-img" style="background: none; padding: 0; height: auto; min-height: 0;">
+                <img src="../assets/pinchnip-hero.png" alt="Pinchnip Cover"
+                    style="width: 100%; height: auto; border-radius: var(--border-radius);"
+                    onerror="this.src=''; this.parentElement.style.background='linear-gradient(45deg, #e0e0e0, #f5f5f5)'; this.parentElement.innerText='Hero Image Placeholder';">
+            </div>
+        </section>
+
+        <!-- Torn edge down to next section if needed, but for simplicity let's keep all project details light themed -->
+    </div>
+
+    <main class="container" style="padding-bottom: 6rem;">
+
+        <!-- Content Sections -->
+        <div class="project-section">
+            <h3>Overview</h3>
+            <p class="project-text">
+                Pinchnip is a modern e-commerce website developed for a premium catnip brand focused on delivering
+                high-quality, natural products for cats. The platform was designed to provide a seamless shopping
+                experience while visually communicating the brand’s playful yet premium identity.
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                This project was built as a <strong>shared team-based website development effort</strong>, combining
+                design, front-end development, and backend integration to create a fully functional online store capable
+                of handling user authentication, product purchases, and secure payments.
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                The website focuses on creating an engaging product presentation while maintaining a smooth and reliable
+                purchasing workflow for customers.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h3>My Perspective</h3>
+            <p class="project-text">
+                While working on the Pinchnip website, the goal was to develop a <strong>complete digital storefront
+                    rather than just a product showcase</strong>.
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                The website needed to balance three main aspects:
+            </p>
+            <ul class="project-text" style="margin-top: 0.5rem; list-style-type: disc; padding-left: 2rem;">
+                <li>strong visual branding</li>
+                <li>a smooth e-commerce experience</li>
+                <li>reliable backend integrations</li>
+            </ul>
+            <p class="project-text" style="margin-top: 1rem;">
+                The project required collaboration with team members to integrate multiple systems including
+                authentication, payment processing, and product management.
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                The objective was to create a website that not only represents the brand but also functions as a
+                <strong>scalable online sales platform.</strong>
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h3>Goals of the Project</h3>
+            <p class="project-text">
+                The main goals of the Pinchnip website development were:
+            </p>
+            <ul class="project-text" style="margin-top: 0.5rem; list-style-type: disc; padding-left: 2rem;">
+                <li>Build a <strong>modern e-commerce platform</strong> for the brand</li>
+                <li>Provide a visually engaging <strong>product presentation experience</strong></li>
+                <li>Implement secure <strong>user authentication and account management</strong></li>
+                <li>Integrate a reliable <strong>online payment system</strong></li>
+                <li>Create a smooth and intuitive <strong>shopping and checkout process</strong></li>
+            </ul>
+            <p class="project-text" style="margin-top: 1rem;">
+                The website was designed to ensure customers can move easily from product discovery to checkout with
+                minimal friction.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h3>Implementation</h3>
+
+            <h4
+                style="font-family: var(--font-body); font-size: 1.25rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.5rem; color: var(--text-ink);">
+                Brand-Focused User Interface</h4>
+            <p class="project-text">
+                The visual design of the website emphasizes a bold and vibrant aesthetic that reflects the energetic
+                personality of the brand.
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                Key interface features include:
+            </p>
+            <ul class="project-text" style="margin-top: 0.5rem; list-style-type: disc; padding-left: 2rem;">
+                <li>dynamic color gradients and lighting effects</li>
+                <li>strong product-centered hero sections</li>
+                <li>modern typography and layout hierarchy</li>
+                <li>visually rich product displays</li>
+            </ul>
+            <p class="project-text" style="margin-top: 1rem;">
+                These elements help highlight the product while maintaining a playful and memorable visual experience.
+            </p>
+
+            <h4
+                style="font-family: var(--font-body); font-size: 1.25rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.5rem; color: var(--text-ink);">
+                Product Experience & Store System</h4>
+            <p class="project-text">
+                The website includes a complete product browsing and purchasing experience. Customers can:
+            </p>
+            <ul class="project-text" style="margin-top: 0.5rem; list-style-type: disc; padding-left: 2rem;">
+                <li>explore the product through multiple product images</li>
+                <li>view detailed product descriptions</li>
+                <li>select quantities</li>
+                <li>add items to cart or purchase instantly</li>
+            </ul>
+            <p class="project-text" style="margin-top: 1rem;">
+                The product pages were designed to communicate value clearly while maintaining a clean layout that
+                encourages purchase decisions.
+            </p>
+
+            <h4
+                style="font-family: var(--font-body); font-size: 1.25rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.5rem; color: var(--text-ink);">
+                User Authentication System</h4>
+            <p class="project-text">
+                The platform includes a secure login and account system that allows customers to manage their profiles
+                and view order history.
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                Authentication features include:
+            </p>
+            <ul class="project-text" style="margin-top: 0.5rem; list-style-type: disc; padding-left: 2rem;">
+                <li><strong>Google Authentication integration</strong> for quick sign-in</li>
+                <li>email-based account creation and login</li>
+                <li>user account management and order tracking</li>
+            </ul>
+            <p class="project-text" style="margin-top: 1rem;">
+                This reduces friction during onboarding and allows users to access the platform easily.
+            </p>
+
+            <h4
+                style="font-family: var(--font-body); font-size: 1.25rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.5rem; color: var(--text-ink);">
+                Payment & Checkout Integration</h4>
+            <p class="project-text">
+                To enable secure and reliable online purchases, the website integrates <strong>Stripe payment
+                    processing</strong>.
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                This allows customers to:
+            </p>
+            <ul class="project-text" style="margin-top: 0.5rem; list-style-type: disc; padding-left: 2rem;">
+                <li>securely complete purchases online</li>
+                <li>handle payments through trusted infrastructure</li>
+                <li>process transactions quickly and safely</li>
+            </ul>
+            <p class="project-text" style="margin-top: 1rem;">
+                Stripe was selected because of its reliability, security standards, and scalability for e-commerce
+                platforms.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h3>Team Collaboration</h3>
+            <p class="project-text">
+                This project was developed as a <strong>shared team-based development project</strong>, where multiple
+                contributors worked on different aspects of the system.
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                The collaboration included work across:
+            </p>
+            <ul class="project-text" style="margin-top: 0.5rem; list-style-type: disc; padding-left: 2rem;">
+                <li>frontend interface development</li>
+                <li>backend system integration</li>
+                <li>authentication and payment infrastructure</li>
+                <li>UI/UX design and optimization</li>
+            </ul>
+            <p class="project-text" style="margin-top: 1rem;">
+                Working in a team environment allowed the project to move efficiently while combining different
+                technical strengths.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h3>What This Project Demonstrates</h3>
+            <p class="project-text">
+                The Pinchnip website showcases my ability to work on <strong>real-world e-commerce platforms that
+                    combine design, development, and third-party integrations.</strong>
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                This project demonstrates:
+            </p>
+            <ul class="project-text" style="margin-top: 0.5rem; list-style-type: disc; padding-left: 2rem;">
+                <li>modern web development skills</li>
+                <li>e-commerce platform implementation</li>
+                <li>authentication system integration</li>
+                <li>payment gateway integration</li>
+                <li>collaborative development workflows</li>
+            </ul>
+            <p class="project-text" style="margin-top: 1rem;">
+                It highlights experience building websites that are <strong>both visually engaging and technically
+                    functional.</strong>
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h3>Outcome</h3>
+            <p class="project-text">
+                The final result is a fully functional <strong>e-commerce website that delivers a smooth shopping
+                    experience while representing the brand’s identity effectively.</strong>
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                The platform provides customers with an easy way to explore the product, create accounts, and complete
+                purchases securely.
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                This project demonstrates how combining strong design with reliable technical infrastructure can produce
+                a scalable and effective online store.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h3>Screens</h3>
+            <div class="screens-grid">
+                <div class="screen-placeholder" style="background: none; padding: 0;">
+                    <img src="../assets/media__1772695485069.png" alt="Screen 1"
+                        style="width: 100%; height: 100%; object-fit: contain; border-radius: var(--border-radius);"
+                        onerror="this.src=''; this.parentElement.style.background='#eaeaea'; this.parentElement.innerText='Screen 1 Placeholder';">
+                </div>
+                <div class="screen-placeholder" style="background: none; padding: 0;">
+                    <img src="../assets/media__1772695485170.png" alt="Screen 2"
+                        style="width: 100%; height: 100%; object-fit: contain; border-radius: var(--border-radius);"
+                        onerror="this.src=''; this.parentElement.style.background='#eaeaea'; this.parentElement.innerText='Screen 2 Placeholder';">
+                </div>
+                <div class="screen-placeholder" style="background: none; padding: 0; grid-column: 1 / -1;">
+                    <img src="../assets/media__1772695485290.png" alt="Screen 3"
+                        style="width: 100%; height: 100%; object-fit: contain; border-radius: var(--border-radius);"
+                        onerror="this.src=''; this.parentElement.style.background='#eaeaea'; this.parentElement.innerText='Screen 3 Placeholder';">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-area" style="padding-top: 0; border-top: 1px solid #ddd;">
+        <div class="cta-strip">
+            <div class="container">
+                <h2 class="cta-heading">Ready to build your website?</h2>
+                <a href="mailto:ankit3765kumar@gmail.com?subject=Website%20Inquiry&body=Hi%20Ankit,%0D%0A%0D%0AI%27m%20interested%20in%20a%20website.%20Here%20are%20the%20details:%0D%0A-%20Business%20Name:%0D%0A-%20Website%20Type%20(New%20or%20Redesign):%0D%0A-%20Timeline:%0D%0A-%20Budget:%0D%0A%0D%0AThank%20you."
+                    class="btn btn-primary btn-large" aria-label="Email Ankit">Contact
+                    Now</a>
+            </div>
+        </div>
+        <div class="main-footer container">
+            <div class="footer-col brand-col">
+                <a href="/" class="logo footer-logo">
+                    <img src="../assets/logo.png?v=3" alt="Ankit" class="footer-logo-img">
+                    <span>ANKIT</span>
+                </a>
+                <p>Modern Web Designer & Developer.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/work">Work</a></li>
+                    <li><a href="/services">Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="mailto:ankit3765kumar@gmail.com?subject=Website%20Inquiry&body=Hi%20Ankit,%0D%0A%0D%0AI%27m%20interested%20in%20a%20website.%20Here%20are%20the%20details:%0D%0A-%20Business%20Name:%0D%0A-%20Website%20Type%20(New%20or%20Redesign):%0D%0A-%20Timeline:%0D%0A-%20Budget:%0D%0A%0D%0AThank%20you."
+                            aria-label="Email Ankit">Email</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Location</h4>
+                <p>India</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;
+                <script>document.write(new Date().getFullYear())</script> Ankit. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

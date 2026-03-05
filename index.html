@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png?v=3">
+    <meta name="description"
+        content="Portfolio of Ankit, a Web Designer and Developer from India crafting modern web experiences.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&family=Caveat:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- LIGHT THEME AREA (Header + Hero) -->
+    <div class="light-area">
+        <header class="header">
+            <a href="/" class="logo" aria-label="Home">
+                <img src="assets/logo.png?v=3" alt="Ankit" class="header-logo-img">
+            </a>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/work">Work</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/process">Process</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="mailto:ankit3765kumar@gmail.com?subject=Website%20Inquiry&body=Hi%20Ankit,%0D%0A%0D%0AI%27m%20interested%20in%20a%20website.%20Here%20are%20the%20details:%0D%0A-%20Business%20Name:%0D%0A-%20Website%20Type%20(New%20or%20Redesign):%0D%0A-%20Timeline:%0D%0A-%20Budget:%0D%0A%0D%0AThank%20you."
+                class="btn btn-primary" id="header-cta" aria-label="Email Ankit">Contact
+                Now</a>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 12h18M3 6h18M3 18h18"></path>
+                </svg>
+            </button>
+        </header>
+
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="title-wrapper">
+                    <h1 class="hero-title">Portfolio</h1>
+                    <div class="year-badge">
+                        <span>2026</span>
+                    </div>
+                </div>
+                <p class="hero-subtitle">Web Design ✦ Development ✦ UI/UX</p>
+            </div>
+            <!-- Minimal Sticker decorations -->
+            <div class="sticker sticker-star"><svg viewBox="0 0 24 24" fill="#FFB800">
+                    <path
+                        d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+                </svg></div>
+            <div class="sticker sticker-sparkle"><svg viewBox="0 0 24 24" fill="none" stroke="#00C4B5" stroke-width="2">
+                    <path d="M12 2V22M2 12H22M4.93 4.93L19.07 19.07M4.93 19.07L19.07 4.93" />
+                </svg></div>
+        </section>
+
+        <!-- Torn paper divider -->
+        <div class="torn-paper-edge-top">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0 C150,40 300,10 450,50 C600,90 750,20 900,60 C1050,100 1150,30 1200,50 L1200,120 L0,120 Z"
+                    fill="#222222" />
+            </svg>
+        </div>
+    </div>
+
+    <!-- DARK THEME AREA (Intro + Services) -->
+    <main class="dark-area">
+
+        <section class="intro" id="about">
+            <div class="container intro-container">
+                <!-- Left: Taped Polaroid Photo -->
+                <div class="intro-photo-col">
+                    <img src="assets/new-polaroid.png?v=2" alt="Ankit" class="custom-polaroid-img">
+                </div>
+
+                <!-- Right: Intro text & Contact -->
+                <div class="intro-text-col">
+                    <h2 class="section-heading">Hello!</h2>
+                    <p class="intro-text">
+                        I’m Ankit, a web designer and developer from India. I build modern websites — from simple
+                        business sites to high-end, custom designs. I focus on clean UI, responsive layout, and fast
+                        performance.
+                    </p>
+
+                    <div class="contact-mini">
+                        <h4 class="contact-title">Contact</h4>
+                        <div class="contact-links">
+                            <a href="mailto:ankit3765kumar@gmail.com?subject=Website%20Inquiry&body=Hi%20Ankit,%0D%0A%0D%0AI%27m%20interested%20in%20a%20website.%20Here%20are%20the%20details:%0D%0A-%20Business%20Name:%0D%0A-%20Website%20Type%20(New%20or%20Redesign):%0D%0A-%20Timeline:%0D%0A-%20Budget:%0D%0A%0D%0AThank%20you."
+                                class="contact-link" aria-label="Email Ankit">
+                                <span class="icon">✉️</span> ankit3765kumar@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🌐</div>
+                        <h3 class="service-title">Business Websites</h3>
+                        <p class="service-desc">Professional and visually engaging sites for your brand.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">⚡</div>
+                        <h3 class="service-title">Website Redesigns</h3>
+                        <p class="service-desc">Modernizing old sites for better performance and UI.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🛠️</div>
+                        <h3 class="service-title">Custom Web Solutions</h3>
+                        <p class="service-desc">Tailored designs & development for unique needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Selected Projects -->
+        <section class="portfolio" id="work">
+            <div class="container">
+                <h2 class="section-heading centered">Selected Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <a href="/project" class="project-card">
+                        <div class="project-thumb">
+                            <img src="assets/adams-hero.png" alt="Adam's Club"
+                                style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;"
+                                onerror="this.src=''; this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                            <div class="placeholder-box">IMG</div>
+                            <span class="project-tag tag-concept">Full Stack Concept</span>
+                        </div>
+                        <h4 class="project-name">Adam's Club</h4>
+                    </a>
+                    <!-- Project 2 -->
+                    <a href="/deservo" class="project-card">
+                        <div class="project-thumb">
+                            <img src="assets/deservo-hero.png" alt="Deservo"
+                                style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;"
+                                onerror="this.src=''; this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                            <div class="placeholder-box">IMG</div>
+                            <span class="project-tag tag-exploration">Growth Infrastructure</span>
+                        </div>
+                        <h4 class="project-name">Deservo</h4>
+                    </a>
+                    <!-- Project 3 -->
+                    <a href="/pinchnip" class="project-card">
+                        <div class="project-thumb">
+                            <img src="assets/pinchnip-hero.png" alt="Pinchnip"
+                                style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;"
+                                onerror="this.src=''; this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                            <div class="placeholder-box">IMG</div>
+                            <span class="project-tag tag-exploration">E-Commerce Design</span>
+                        </div>
+                        <h4 class="project-name">Pinchnip</h4>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="process" id="process">
+            <div class="container">
+                <h2 class="section-heading centered">Process</h2>
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-num">1</div>
+                        <h4 class="step-name">Discovery</h4>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step">
+                        <div class="step-num">2</div>
+                        <h4 class="step-name">Structure</h4>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step">
+                        <div class="step-num">3</div>
+                        <h4 class="step-name">Design</h4>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step">
+                        <div class="step-num">4</div>
+                        <h4 class="step-name">Build</h4>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step">
+                        <div class="step-num">5</div>
+                        <h4 class="step-name">Launch</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Torn paper divider Bottom -->
+    <div class="torn-paper-edge-bottom">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0 C150,40 300,10 450,50 C600,90 750,20 900,60 C1050,100 1150,30 1200,50 L1200,120 L0,120 Z"
+                fill="#222222" />
+        </svg>
+    </div>
+
+    <!-- CTA & Footer -->
+    <footer class="footer-area" id="contact">
+        <div class="cta-strip">
+            <div class="container">
+                <h2 class="cta-heading">Ready to build your website?</h2>
+                <a href="mailto:ankit3765kumar@gmail.com?subject=Website%20Inquiry&body=Hi%20Ankit,%0D%0A%0D%0AI%27m%20interested%20in%20a%20website.%20Here%20are%20the%20details:%0D%0A-%20Business%20Name:%0D%0A-%20Website%20Type%20(New%20or%20Redesign):%0D%0A-%20Timeline:%0D%0A-%20Budget:%0D%0A%0D%0AThank%20you."
+                    class="btn btn-primary btn-large" aria-label="Email Ankit">Contact
+                    Now</a>
+            </div>
+        </div>
+        <div class="main-footer container">
+            <div class="footer-col brand-col">
+                <a href="/" class="logo footer-logo">
+                    <img src="assets/logo.png?v=3" alt="Ankit" class="footer-logo-img">
+                    <span>ANKIT</span>
+                </a>
+                <p>Modern Web Designer & Developer.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/work">Work</a></li>
+                    <li><a href="/services">Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="mailto:ankit3765kumar@gmail.com?subject=Website%20Inquiry&body=Hi%20Ankit,%0D%0A%0D%0AI%27m%20interested%20in%20a%20website.%20Here%20are%20the%20details:%0D%0A-%20Business%20Name:%0D%0A-%20Website%20Type%20(New%20or%20Redesign):%0D%0A-%20Timeline:%0D%0A-%20Budget:%0D%0A%0D%0AThank%20you."
+                            aria-label="Email Ankit">Email</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Location</h4>
+                <p>India</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;
+                <script>document.write(new Date().getFullYear())</script> Ankit. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

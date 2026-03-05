@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit</title>
+    <link rel="icon" type="image/png" href="../assets/favicon.png?v=3">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&family=Caveat:wght@700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Specific styles for the project template */
+        .project-hero {
+            padding-top: 6rem;
+            padding-bottom: 4rem;
+            text-align: center;
+        }
+
+        .project-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+            color: #555;
+            font-size: 0.95rem;
+            flex-wrap: wrap;
+        }
+
+        .meta-item strong {
+            color: var(--text-ink);
+        }
+
+        .project-cover-img {
+            width: 100%;
+            height: 50vh;
+            min-height: 400px;
+            background-color: #ddd;
+            border-radius: var(--border-radius);
+            margin: 3rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-size: 1.5rem;
+            background: linear-gradient(45deg, #e0e0e0, #f5f5f5);
+        }
+
+        .project-section {
+            padding: 3rem 0;
+        }
+
+        .project-section h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--accent-blue);
+        }
+
+        .project-text {
+            font-size: 1.125rem;
+            max-width: 800px;
+            color: #333;
+        }
+
+        .tools-list {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .tool-tag {
+            background-color: rgba(0, 0, 0, 0.05);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Screens Grid */
+        .screens-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .screen-placeholder {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background-color: #eaeaea;
+            border-radius: var(--border-radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            font-weight: 600;
+            color: var(--text-ink);
+            border-bottom: 2px solid var(--text-ink);
+            padding-bottom: 2px;
+        }
+
+        .back-link:hover {
+            color: var(--accent-pink);
+            border-color: var(--accent-pink);
+        }
+
+        @media (max-width: 768px) {
+            .screens-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header area (same as index, light grid) -->
+    <div class="light-area">
+        <header class="header">
+            <a href="/" class="logo" aria-label="Home">
+                <img src="../assets/logo.png?v=3" alt="Ankit" class="header-logo-img">
+            </a>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/work">Work</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="mailto:ankit3765kumar@gmail.com?subject=Website%20Inquiry&body=Hi%20Ankit,%0D%0A%0D%0AI%27m%20interested%20in%20a%20website.%20Here%20are%20the%20details:%0D%0A-%20Business%20Name:%0D%0A-%20Website%20Type%20(New%20or%20Redesign):%0D%0A-%20Timeline:%0D%0A-%20Budget:%0D%0A%0D%0AThank%20you."
+                class="btn btn-primary" id="header-cta" aria-label="Email Ankit">Contact
+                Now</a>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 12h18M3 6h18M3 18h18"></path>
+                </svg>
+            </button>
+        </header>
+
+        <section class="container project-hero">
+            <a href="/work" class="back-link">← Back to Projects</a>
+            <h1 class="hero-title" style="font-size: clamp(3rem, 6vw, 5rem);">Adam's Club</h1>
+
+
+            <!-- Hero Image -->
+            <div class="project-cover-img" style="background: none; padding: 0; height: auto; min-height: 0;">
+                <img src="../assets/adams-hero.png" alt="Adam's Club Cover"
+                    style="width: 100%; height: auto; border-radius: var(--border-radius);"
+                    onerror="this.src=''; this.parentElement.style.background='linear-gradient(45deg, #e0e0e0, #f5f5f5)'; this.parentElement.innerText='Hero Image Placeholder';">
+            </div>
+        </section>
+
+        <!-- Torn edge down to next section if needed, but for simplicity let's keep all project details light themed -->
+    </div>
+
+    <main class="container" style="padding-bottom: 6rem;">
+
+        <!-- Content Sections -->
+        <div class="project-section">
+            <h3>Overview</h3>
+            <p class="project-text">
+                Adam's Club is a full-stack concept platform designed around the idea of <strong>access-based outdoor
+                    adventure rentals</strong>. Instead of owning expensive gear, users can subscribe to a membership
+                plan and gain access to camping equipment, bikes, watercraft, and outdoor experiences whenever they need
+                them.
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                The project started as a simple landing page idea but evolved into a <strong>complete product
+                    ecosystem</strong>, including authentication systems, subscription infrastructure, and scalable
+                backend architecture designed to manage memberships, rentals, and payments.
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                This project showcases my ability to design and develop <strong>both the front-end user experience and
+                    the underlying system architecture required to operate a modern digital platform.</strong>
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h3>My Perspective</h3>
+            <p class="project-text">
+                When I began designing Adam's Club, I approached it not just as a landing page but as a <strong>real
+                    product that could function as a business</strong>.
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                I wanted to explore how a digital platform could manage:
+            </p>
+            <ul class="project-text" style="margin-top: 0.5rem; list-style-type: disc; padding-left: 2rem;">
+                <li>user onboarding</li>
+                <li>subscription memberships</li>
+                <li>rental access systems</li>
+                <li>scalable backend logic</li>
+                <li>secure payment handling</li>
+            </ul>
+            <p class="project-text" style="margin-top: 1rem;">
+                The goal was to simulate the <strong>complete workflow of a modern SaaS or membership-based
+                    platform</strong>, from the marketing website all the way to the backend infrastructure powering it.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h3>Goals of the Project</h3>
+            <p class="project-text">
+                The main goals behind Adam's Club were:
+            </p>
+            <ul class="project-text" style="margin-top: 0.5rem; list-style-type: disc; padding-left: 2rem;">
+                <li>Design a modern landing experience that communicates the product clearly.</li>
+                <li>Build a scalable backend system capable of managing memberships and rentals.</li>
+                <li>Implement secure authentication and payment systems.</li>
+                <li>Create a flexible architecture that could support both <strong>subscription models and e-commerce
+                        style transactions</strong>.</li>
+                <li>Demonstrate how a product can evolve from a simple landing page into a full platform.</li>
+            </ul>
+            <p class="project-text" style="margin-top: 1rem;">
+                This project helped me explore the <strong>entire lifecycle of a product</strong>, not just the visual
+                design.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h3>Implementation</h3>
+            <p class="project-text">
+                Adam's Club was developed with a focus on both <strong>user experience and system architecture</strong>.
+            </p>
+
+            <h4
+                style="font-family: var(--font-body); font-size: 1.25rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.5rem; color: var(--text-ink);">
+                Frontend Experience</h4>
+            <p class="project-text">
+                The front-end focuses on a clean and modern interface that introduces the platform, explains membership
+                plans, and guides users toward sign-up. The layout is designed to clearly present pricing tiers,
+                benefits, and platform features while maintaining a smooth user journey.
+            </p>
+
+            <h4
+                style="font-family: var(--font-body); font-size: 1.25rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.5rem; color: var(--text-ink);">
+                Authentication System</h4>
+            <p class="project-text">
+                The platform integrates <strong>Google Authentication</strong>, allowing users to quickly create an
+                account and access the system securely without complex sign-up processes.
+            </p>
+
+            <h4
+                style="font-family: var(--font-body); font-size: 1.25rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.5rem; color: var(--text-ink);">
+                Payment Infrastructure</h4>
+            <p class="project-text">
+                Stripe was integrated to handle secure payments and subscription management. The system supports:
+            </p>
+            <ul class="project-text" style="margin-top: 0.5rem; list-style-type: disc; padding-left: 2rem;">
+                <li>subscription-based memberships</li>
+                <li>recurring billing systems</li>
+                <li>flexible pricing tiers</li>
+                <li>checkout flows for digital services</li>
+            </ul>
+            <p class="project-text" style="margin-top: 1rem;">
+                This ensures the platform could realistically operate as a subscription-based business.
+            </p>
+
+            <h4
+                style="font-family: var(--font-body); font-size: 1.25rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.5rem; color: var(--text-ink);">
+                Backend Architecture</h4>
+            <p class="project-text">
+                Behind the interface, the platform architecture was designed to simulate how a company could manage:
+            </p>
+            <ul class="project-text" style="margin-top: 0.5rem; list-style-type: disc; padding-left: 2rem;">
+                <li>user accounts</li>
+                <li>membership tiers</li>
+                <li>equipment availability</li>
+                <li>subscription billing</li>
+                <li>rental access permissions</li>
+            </ul>
+            <p class="project-text" style="margin-top: 1rem;">
+                The backend structure demonstrates how a product can move beyond a simple website and operate as a
+                <strong>full digital service platform</strong>.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h3>What This Project Demonstrates</h3>
+            <p class="project-text">
+                Adam's Club highlights my ability to build <strong>complete web solutions</strong>, including:
+            </p>
+            <ul class="project-text" style="margin-top: 0.5rem; list-style-type: disc; padding-left: 2rem;">
+                <li>marketing websites and landing pages</li>
+                <li>complex UI systems</li>
+                <li>authentication flows</li>
+                <li>subscription payment integration</li>
+                <li>backend system design</li>
+            </ul>
+            <p class="project-text" style="margin-top: 1rem;">
+                It reflects my approach to development: designing not just websites, but <strong>scalable digital
+                    products capable of supporting real businesses.</strong>
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h3>Outcome</h3>
+            <p class="project-text">
+                This project evolved from a simple idea into a <strong>comprehensive platform concept</strong>,
+                combining product design, system thinking, and full-stack implementation.
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                It represents my ability to move from <strong>design to architecture to implementation</strong>,
+                building systems that are both visually engaging and technically functional.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h3>Screens</h3>
+            <div class="screens-grid">
+                <div class="screen-placeholder" style="background: none; padding: 0;">
+                    <img src="../assets/media__1772692784005.png" alt="Screen 1"
+                        style="width: 100%; height: 100%; object-fit: contain; border-radius: var(--border-radius);"
+                        onerror="this.src=''; this.parentElement.style.background='#eaeaea'; this.parentElement.innerText='Screen 1 Placeholder';">
+                </div>
+                <div class="screen-placeholder" style="background: none; padding: 0;">
+                    <img src="../assets/media__1772692784042.png" alt="Screen 2"
+                        style="width: 100%; height: 100%; object-fit: contain; border-radius: var(--border-radius);"
+                        onerror="this.src=''; this.parentElement.style.background='#eaeaea'; this.parentElement.innerText='Screen 2 Placeholder';">
+                </div>
+                <div class="screen-placeholder" style="background: none; padding: 0; grid-column: 1 / -1;">
+                    <img src="../assets/media__1772692784052.png" alt="Screen 3"
+                        style="width: 100%; height: 100%; object-fit: contain; border-radius: var(--border-radius);"
+                        onerror="this.src=''; this.parentElement.style.background='#eaeaea'; this.parentElement.innerText='Screen 3 Placeholder';">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-area" style="padding-top: 0; border-top: 1px solid #ddd;">
+        <div class="cta-strip">
+            <div class="container">
+                <h2 class="cta-heading">Ready to build your website?</h2>
+                <a href="mailto:ankit3765kumar@gmail.com?subject=Website%20Inquiry&body=Hi%20Ankit,%0D%0A%0D%0AI%27m%20interested%20in%20a%20website.%20Here%20are%20the%20details:%0D%0A-%20Business%20Name:%0D%0A-%20Website%20Type%20(New%20or%20Redesign):%0D%0A-%20Timeline:%0D%0A-%20Budget:%0D%0A%0D%0AThank%20you."
+                    class="btn btn-primary btn-large" aria-label="Email Ankit">Contact
+                    Now</a>
+            </div>
+        </div>
+        <div class="main-footer container">
+            <div class="footer-col brand-col">
+                <a href="/" class="logo footer-logo">
+                    <img src="../assets/logo.png?v=3" alt="Ankit" class="footer-logo-img">
+                    <span>ANKIT</span>
+                </a>
+                <p>Modern Web Designer & Developer.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/work">Work</a></li>
+                    <li><a href="/services">Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="mailto:ankit3765kumar@gmail.com?subject=Website%20Inquiry&body=Hi%20Ankit,%0D%0A%0D%0AI%27m%20interested%20in%20a%20website.%20Here%20are%20the%20details:%0D%0A-%20Business%20Name:%0D%0A-%20Website%20Type%20(New%20or%20Redesign):%0D%0A-%20Timeline:%0D%0A-%20Budget:%0D%0A%0D%0AThank%20you."
+                            aria-label="Email Ankit">Email</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Location</h4>
+                <p>India</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;
+                <script>document.write(new Date().getFullYear())</script> Ankit. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
