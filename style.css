@@ -674,6 +674,17 @@ h4,
 
     .torn-paper-edge-top,
     .torn-paper-edge-bottom {
-        height: 25px;
+        height: 35px;
+        /* Give it some vertical space to show the jaggedness */
+        overflow: hidden;
+    }
+
+    .torn-paper-edge-top svg,
+    .torn-paper-edge-bottom svg {
+        width: max(200%, 800px);
+        /* Ensure the zig-zags aren't squished too much horizontally */
+        height: 100%;
+        transform: translateX(-10%);
+        /* Adjust to center a good section of the tear */
     }
 }
