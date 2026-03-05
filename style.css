@@ -670,14 +670,14 @@ h4,
 
     .torn-paper-edge-top,
     .torn-paper-edge-bottom {
-        height: 35px;
+        height: 25px;
         overflow: hidden;
     }
 
     .torn-paper-edge-top svg,
     .torn-paper-edge-bottom svg {
-        width: 400%;
+        width: 200%;
         max-width: none;
-        transform-origin: left center;
+        transform: translateX(-5%);
     }
 }

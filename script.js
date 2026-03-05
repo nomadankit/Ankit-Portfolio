@@ -24,21 +24,48 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Smooth scrolling for anchor links (excluding mailto)
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    // Smooth scrolling for clean URL navigation and anchor links
+    document.querySelectorAll('.nav-links a, a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            navLinks.style.display = ''; // reset mobile menu if open
+            let href = this.getAttribute('href');
+            let targetId = href;
 
-            const targetId = this.getAttribute('href');
+            // Convert clean URLs to anchor IDs (e.g., /work -> #work)
+            if (targetId.startsWith('/') && targetId.length > 1) {
+                targetId = '#' + targetId.substring(1);
+            } else if (targetId === '/') {
+                targetId = '#home';
+            }
+
             if (targetId === '#') return;
 
             const targetElement = document.querySelector(targetId);
+
+            // If the target element exists on the current page, scroll to it
             if (targetElement) {
+                e.preventDefault();
+                navLinks.style.display = ''; // reset mobile menu if open
                 targetElement.scrollIntoView({
                     behavior: 'smooth'
                 });
+
+                // Update URL to match without real navigation
+                if (href.startsWith('/')) {
+                    history.pushState(null, null, href);
+                }
             }
         });
     });
+
+    // Check if we need to scroll to a section on page load based on the URL
+    const path = window.location.pathname;
+    if (path.length > 1 && path !== '/') {
+        const sectionId = '#' + path.substring(1).replace(/\/$/, '');
+        const targetElement = document.querySelector(sectionId);
+        if (targetElement) {
+            setTimeout(() => {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }, 100);
+        }
+    }
 });
