@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swaroop Dental Clinic — Ankit</title>
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Swaroop Dental Clinic — Ankit">
+    <meta property="og:description" content="Portfolio of Ankit, a Web Designer and Developer from India crafting modern web experiences.">
+    <meta property="og:image" content="https://ankit.vercel.app/assets/preview.png">
+    <meta property="og:url" content="https://ankit.vercel.app/">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/png" href="../assets/favicon.png?v=3">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&family=Caveat:wght@700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Specific styles for the project template */
+        .project-hero {
+            padding-top: 6rem;
+            padding-bottom: 4rem;
+            text-align: center;
+        }
+
+        .project-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+            color: #555;
+            font-size: 0.95rem;
+            flex-wrap: wrap;
+        }
+
+        .meta-item strong {
+            color: var(--text-ink);
+        }
+
+        .project-cover-img {
+            width: 100%;
+            height: 50vh;
+            min-height: 400px;
+            background-color: #ddd;
+            border-radius: var(--border-radius);
+            margin: 3rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-size: 1.5rem;
+            background: linear-gradient(45deg, #e0e0e0, #f5f5f5);
+        }
+
+        .project-section {
+            padding: 3rem 0;
+        }
+
+        .project-section h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--accent-blue);
+        }
+
+        .project-text {
+            font-size: 1.125rem;
+            max-width: 800px;
+            color: #333;
+        }
+
+        .tools-list {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .tool-tag {
+            background-color: rgba(0, 0, 0, 0.05);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Screens Grid */
+        .screens-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .screen-placeholder {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background-color: #eaeaea;
+            border-radius: var(--border-radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            font-weight: 600;
+            color: var(--text-ink);
+            border-bottom: 2px solid var(--text-ink);
+            padding-bottom: 2px;
+        }
+
+        .back-link:hover {
+            color: var(--accent-pink);
+            border-color: var(--accent-pink);
+        }
+
+        @media (max-width: 768px) {
+            .screens-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header area (same as index, light grid) -->
+    <div class="light-area">
+        <header class="header">
+            <a href="/" class="logo" aria-label="Home">
+                <img src="../assets/logo.png?v=3" alt="Ankit" class="header-logo-img">
+            </a>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/work">Work</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="mailto:ankit3765kumar@gmail.com?subject=Website%20Inquiry&body=Hi%20Ankit,%0D%0A%0D%0AI%27m%20interested%20in%20a%20website.%20Here%20are%20the%20details:%0D%0A-%20Business%20Name:%0D%0A-%20Website%20Type%20(New%20or%20Redesign):%0D%0A-%20Timeline:%0D%0A-%20Budget:%0D%0A%0D%0AThank%20you."
+                class="btn btn-primary" id="header-cta" aria-label="Email Ankit">Contact
+                Now</a>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 12h18M3 6h18M3 18h18"></path>
+                </svg>
+            </button>
+        </header>
+
+        <section class="container project-hero">
+            <a href="/work" class="back-link">← Back to Projects</a>
+            <h1 class="hero-title" style="font-size: clamp(2.5rem, 6vw, 5rem);">Swaroop Dental Clinic</h1>
+
+            <!-- Hero Image -->
+            <div class="project-cover-img" style="background: none; padding: 0; height: auto; min-height: 0;">
+                <img src="../assets/swaroop-hero.png" alt="Swaroop Dental Clinic"
+                    style="width: 100%; height: auto; border-radius: var(--border-radius);"
+                    onerror="this.src=''; this.parentElement.style.background='linear-gradient(45deg, #e0e0e0, #f5f5f5)'; this.parentElement.innerText='Hero Image Placeholder';">
+            </div>
+        </section>
+
+        <!-- Torn edge down to next section if needed, but for simplicity let's keep all project details light themed -->
+    </div>
+
+    <main class="container" style="padding-bottom: 6rem;">
+
+        <!-- Overview -->
+        <div class="project-section">
+            <h3>Overview</h3>
+            <p class="project-text">
+                The Swaroop Dental Clinic website was developed as a modern and user-friendly platform designed to help
+                patients easily learn about the clinic, explore services, and book appointments online.
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                This project was built entirely by me with a strong focus on creating a professional medical website
+                that combines clear information, simple navigation, and functional features that improve patient
+                interaction.
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                The goal of the website was to create a trustworthy digital presence for the clinic while making it
+                easy for visitors to contact the clinic and schedule dental appointments.
+            </p>
+        </div>
+
+        <!-- My Role -->
+        <div class="project-section">
+            <h3>My Role</h3>
+            <p class="project-text">
+                I designed and developed this website independently from start to finish. Every component of the website
+                was implemented with careful attention to usability, functionality, and visual clarity.
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                The project required building both the visual interface and the interactive elements that allow users to
+                take actions directly from the website.
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                The entire system was developed with full dedication to ensure that every feature works smoothly and
+                reliably for visitors.
+            </p>
+        </div>
+
+        <!-- Key Features -->
+        <div class="project-section">
+            <h3>Key Features</h3>
+
+            <h4
+                style="font-family: var(--font-body); font-size: 1.25rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.5rem; color: var(--text-ink);">
+                Appointment Booking System</h4>
+            <p class="project-text">
+                The website includes a fully functional appointment booking form that allows patients to schedule visits
+                directly through the website.
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                Users can enter:
+            </p>
+            <ul class="project-text" style="margin-top: 0.5rem; list-style-type: disc; padding-left: 2rem;">
+                <li>their name</li>
+                <li>phone number</li>
+                <li>preferred appointment date</li>
+                <li>required treatment</li>
+            </ul>
+            <p class="project-text" style="margin-top: 1rem;">
+                Once submitted, the system processes the request efficiently, allowing the clinic to receive appointment
+                inquiries directly from the website.
+            </p>
+
+            <h4
+                style="font-family: var(--font-body); font-size: 1.25rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.5rem; color: var(--text-ink);">
+                Click-to-Call Contact Button</h4>
+            <p class="project-text">
+                A working <strong>Call Now button</strong> is integrated into the website to allow visitors to quickly
+                contact the clinic.
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                With a single click, users can instantly call the clinic using their device, making it easier for
+                patients to reach the clinic without manually dialing the number.
+            </p>
+
+            <h4
+                style="font-family: var(--font-body); font-size: 1.25rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.5rem; color: var(--text-ink);">
+                Google Maps Integration</h4>
+            <p class="project-text">
+                The website includes a fully embedded <strong>Google Maps location system</strong> that displays the
+                exact location of the clinic.
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                This allows visitors to:
+            </p>
+            <ul class="project-text" style="margin-top: 0.5rem; list-style-type: disc; padding-left: 2rem;">
+                <li>easily locate the clinic</li>
+                <li>view nearby landmarks</li>
+                <li>get directions directly from the map</li>
+            </ul>
+            <p class="project-text" style="margin-top: 1rem;">
+                The map integration improves accessibility and helps patients find the clinic without confusion.
+            </p>
+
+            <h4
+                style="font-family: var(--font-body); font-size: 1.25rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.5rem; color: var(--text-ink);">
+                Navigation &amp; Interactive Buttons</h4>
+            <p class="project-text">
+                Several interactive elements were implemented across the website to improve the user experience.
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                These include:
+            </p>
+            <ul class="project-text" style="margin-top: 0.5rem; list-style-type: disc; padding-left: 2rem;">
+                <li><strong>Book Appointment button</strong> that smoothly directs users to the booking section</li>
+                <li><strong>Call Now button</strong> for instant contact</li>
+                <li><strong>Get Directions button</strong> linked with Google Maps navigation</li>
+                <li>navigation menu for quick access to sections such as Services, Gallery, Reviews, and Contact</li>
+            </ul>
+            <p class="project-text" style="margin-top: 1rem;">
+                All buttons and interactive elements were fully implemented and tested to ensure smooth functionality.
+            </p>
+
+            <h4
+                style="font-family: var(--font-body); font-size: 1.25rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.5rem; color: var(--text-ink);">
+                Patient Review Section</h4>
+            <p class="project-text">
+                The website includes a review section designed to build trust with potential patients by displaying
+                feedback from previous visitors.
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                This section helps reinforce the credibility of the clinic and creates a stronger sense of reliability
+                for new patients visiting the website.
+            </p>
+
+            <h4
+                style="font-family: var(--font-body); font-size: 1.25rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.5rem; color: var(--text-ink);">
+                Clinic Gallery</h4>
+            <p class="project-text">
+                A gallery section was implemented to showcase the clinic environment and facilities.
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                This helps patients visually understand the cleanliness, equipment, and professional environment of the
+                clinic before visiting.
+            </p>
+        </div>
+
+        <!-- Design Approach -->
+        <div class="project-section">
+            <h3>Design Approach</h3>
+            <p class="project-text">
+                The design of the website focuses on creating a calm, clean, and professional healthcare experience.
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                Key design considerations include:
+            </p>
+            <ul class="project-text" style="margin-top: 0.5rem; list-style-type: disc; padding-left: 2rem;">
+                <li>soft color palette suitable for healthcare websites</li>
+                <li>clean typography for easy readability</li>
+                <li>spacious layout for visual comfort</li>
+                <li>clear call-to-action buttons for booking and contact</li>
+            </ul>
+            <p class="project-text" style="margin-top: 1rem;">
+                These design choices help visitors feel confident and comfortable while interacting with the website.
+            </p>
+        </div>
+
+        <!-- Outcome -->
+        <div class="project-section">
+            <h3>Outcome</h3>
+            <p class="project-text">
+                The final result is a <strong>fully functional dental clinic website</strong> that allows patients to
+                easily access information, book appointments, and contact the clinic.
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                The project demonstrates my ability to independently build complete websites that combine visual design,
+                interactive features, and practical real-world functionality.
+            </p>
+            <p class="project-text" style="margin-top: 1rem;">
+                Every feature of the website was implemented with full dedication to ensure reliability, ease of use,
+                and a professional online presence for the clinic.
+            </p>
+        </div>
+
+        <!-- Screens -->
+        <div class="project-section">
+            <h3>Screens</h3>
+            <div class="screens-grid">
+                <div class="screen-placeholder" style="background: none; padding: 0;">
+                    <img src="../assets/swaroop-screen1.png" alt="Appointment Booking"
+                        style="width: 100%; height: 100%; object-fit: contain; border-radius: var(--border-radius);"
+                        onerror="this.src=''; this.parentElement.style.background='#eaeaea'; this.parentElement.innerText='Screen 1';">
+                </div>
+                <div class="screen-placeholder" style="background: none; padding: 0;">
+                    <img src="../assets/swaroop-screen2.png" alt="Clinic Gallery"
+                        style="width: 100%; height: 100%; object-fit: contain; border-radius: var(--border-radius);"
+                        onerror="this.src=''; this.parentElement.style.background='#eaeaea'; this.parentElement.innerText='Screen 2';">
+                </div>
+                <div class="screen-placeholder" style="background: none; padding: 0;">
+                    <img src="../assets/swaroop-screen3.png" alt="Patient Reviews"
+                        style="width: 100%; height: 100%; object-fit: contain; border-radius: var(--border-radius);"
+                        onerror="this.src=''; this.parentElement.style.background='#eaeaea'; this.parentElement.innerText='Screen 3';">
+                </div>
+                <div class="screen-placeholder" style="background: none; padding: 0;">
+                    <img src="../assets/swaroop-screen4.png" alt="Google Maps & Contact"
+                        style="width: 100%; height: 100%; object-fit: contain; border-radius: var(--border-radius);"
+                        onerror="this.src=''; this.parentElement.style.background='#eaeaea'; this.parentElement.innerText='Screen 4';">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-area" style="padding-top: 0; border-top: 1px solid #ddd;">
+        <div class="cta-strip">
+            <div class="container">
+                <h2 class="cta-heading">Ready to build your website?</h2>
+                <a href="mailto:ankit3765kumar@gmail.com?subject=Website%20Inquiry&body=Hi%20Ankit,%0D%0A%0D%0AI%27m%20interested%20in%20a%20website.%20Here%20are%20the%20details:%0D%0A-%20Business%20Name:%0D%0A-%20Website%20Type%20(New%20or%20Redesign):%0D%0A-%20Timeline:%0D%0A-%20Budget:%0D%0A%0D%0AThank%20you."
+                    class="btn btn-primary btn-large" aria-label="Email Ankit">Contact
+                    Now</a>
+            </div>
+        </div>
+        <div class="main-footer container">
+            <div class="footer-col brand-col">
+                <a href="/" class="logo footer-logo">
+                    <img src="../assets/logo.png?v=3" alt="Ankit" class="footer-logo-img">
+                    <span>ANKIT</span>
+                </a>
+                <p>Modern Web Designer &amp; Developer.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/work">Work</a></li>
+                    <li><a href="/services">Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="mailto:ankit3765kumar@gmail.com?subject=Website%20Inquiry&body=Hi%20Ankit,%0D%0A%0D%0AI%27m%20interested%20in%20a%20website.%20Here%20are%20the%20details:%0D%0A-%20Business%20Name:%0D%0A-%20Website%20Type%20(New%20or%20Redesign):%0D%0A-%20Timeline:%0D%0A-%20Budget:%0D%0A%0D%0AThank%20you."
+                            aria-label="Email Ankit">Email</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Location</h4>
+                <p>India</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;
+                <script>document.write(new Date().getFullYear())</script> Ankit. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
